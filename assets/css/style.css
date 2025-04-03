@@ -1,0 +1,412 @@
+:root{
+    --DarkGray:#1F2122;
+    --LightGray:#454848 ;
+    --PinkColor:#E75E8D ;
+    --mainfont: "Barriecito", system-ui;
+    --secoundry:"Moon Dance", cursive ;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.maincontainer{
+    background-color: var(--DarkGray);
+    width: 100%;
+    padding:3vh 7% 2vh;
+  
+}
+.maincontainer .header{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.maincontainer .header .logo{
+width: 20%;
+}
+.maincontainer .header .logo img{
+    width: 100%;
+}
+.maincontainer .header .line{
+    height: 60px;
+    width: 2px;
+    background-color: var(--LightGray);
+}
+.maincontainer .header .search{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--LightGray);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #555;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.maincontainer .header .search input{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 80%;
+    outline: none;
+    color: #666;
+}
+.maincontainer .header ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.maincontainer .header ul li a{
+    color: #666;
+    text-decoration: none;
+    font-family: var(--secoundry);
+    font-size: 25px;
+    font-weight: bold;
+    transition: 1s;
+}
+.maincontainer .header ul li a:hover{
+    color: #E75E8D;
+}
+.maincontainer .header ul .proli{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--LightGray);
+    border-radius: 20px;
+    padding: 7px 15px;
+    transition: 1s;
+}
+.maincontainer .header ul .proli:hover{
+    background-color: var(--PinkColor);
+}
+.maincontainer .header ul .proli a:hover{
+   color: aliceblue;
+}
+.maincontainer .header ul .proli img{
+    border-radius: 50%;
+} 
+.maincontainer .header ul li .home{
+    color: var(--PinkColor);
+}
+.maincontainer .content{
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGray);
+    border-radius: 30px;
+    margin-top: 50px;
+}
+.maincontainer .content .banner{
+    width: 100%;
+    background-image: url(../images/banner-bg.jpg);
+    background-size: 100% 100%;
+    padding: 5vh 5%;
+    border-radius: 30px;
+    color: antiquewhite;
+    margin-top: 50px;
+}
+.maincontainer .content .banner h2 span{
+color: var(--PinkColor);
+text-transform: uppercase;
+}
+.maincontainer .content .banner h3{
+    font-family: var(--secoundry);
+    font-size: 40px;
+    font-weight: bold;
+    
+
+}
+.maincontainer .content .banner h2{
+    font-family: var(--mainfont);
+    font-size: 50px;
+    margin:35px 0;
+    width: 50%;
+}
+.maincontainer .content .banner button,.maincontainer .content .popular button
+,.maincontainer .content .library button{
+    background-color: #E75E8D;
+    color: aliceblue;
+    font-family: var(--secoundry);
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    padding: 7px 15px;
+    transition: 1s;
+}
+.maincontainer .content .banner button:hover,
+.maincontainer .content .popular button:hover,
+.maincontainer .content .library button:hover{
+    color: var(--PinkColor);
+    background-color: aliceblue;
+}
+.maincontainer .content .popular{
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGray);
+    margin-top: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+.maincontainer .content .popular h1,
+.maincontainer .content .library h1{
+    font-family: var(--mainfont);
+    color: var(--PinkColor);
+    font-size: 35px;
+    text-align: left;
+}
+.maincontainer .content .popular h1 span,
+.maincontainer .content .library h1 span{
+    text-decoration-line: underline;
+    color: aliceblue;
+    text-transform: capitalize;
+     
+}
+.maincontainer .content .popular .cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+row-gap: 30px;
+margin-bottom: 50px;
+}
+.maincontainer .content .popular .cards .card{
+width: 24%;
+ 
+background-color: var(--LightGray);
+padding: 15px;
+border-radius: 20px;
+}
+.maincontainer .content .popular .cards .card img{
+    width: 100%;
+    border-radius: 20px;
+}
+.maincontainer .content .popular .cards .card img:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+.maincontainer .content .popular .cards .card .data{
+   width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color:#888888;
+    font-family: var(--secoundry);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.maincontainer .content .popular .cards .card .data h2{
+    color: aliceblue;
+    font-family: var(--mainfont);
+    
+}
+.maincontainer .content .popular .cards .card .data .fa-star {
+    color: yellow;
+}
+.maincontainer .content .popular .cards .card .data .fa-download{
+    color: #E75E8D;
+}
+.maincontainer .content .library  {
+    background-color: var(--DarkGray);
+    width: 100%;
+    padding: 5vh 5%;
+    border-radius: 30px;
+    margin-top: 50px;
+   text-align: center;
+}
+.maincontainer .content .library .gaming{
+    width: 100%;
+    margin-top: 30px;
+
+}
+.maincontainer .content .library .gaming .game{
+   width: 100%;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+gap: 10px;
+    margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.maincontainer .content .library .gaming .game img{
+    border-radius: 20px;
+}
+.maincontainer .content .library .gaming .game h3{
+    color: aliceblue;
+    
+    text-transform: capitalize;
+     
+}
+.maincontainer .content .library .gaming .game p{
+    font-family: var(--secoundry);
+    color: #666;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+.maincontainer .content .library .gaming .game button{
+background-color: transparent;
+border: 1px solid #666;
+color: #666;
+padding: 7px 25px;
+font-size: 22px;
+font-weight: bold;
+font-family: var(--secoundry);
+border-radius: 20px;
+}
+.maincontainer .content .library .gaming .game .btn{
+    color: #E75E8D;
+    border-color: #E75E8D;
+}
+.maincontainer .footer{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--secoundry);
+    font-size: 22px;
+    margin: 50px 0 20px;
+}
+.maincontainer .footer .name{
+    color: #E75E8D;
+    font-size: 30px;
+}
+.maincontainer .header input[type="checkbox"],
+.maincontainer .header label i{
+    display: none;
+}
+
+@media(max-width:1150px) {
+    .maincontainer .header{
+        flex-wrap: wrap;
+    }
+    .maincontainer .header .logo{
+        width: 20%;
+    }
+    .maincontainer .header .search{
+        width: 50%;
+    }
+    .maincontainer .header ul{
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .maincontainer .content .banner h2{
+        font-size: 35px;
+        width: 50%;
+    }
+    .maincontainer .content .popular h1,
+    .maincontainer .content .library h1{
+        font-size: 30px;
+    }
+    .maincontainer .content .popular .cards .card .data h2{
+font-size: 16px;
+    }
+    .maincontainer .content .popular .cards .card{
+        width: 30%;
+    }
+ 
+    .maincontainer .content .library .gaming .game{
+          grid-template-columns: repeat(3,1fr);
+          row-gap: 30px;
+    }       
+}
+@media(max-width:894px){
+
+    .maincontainer .header .line
+    {
+        display: none;
+    }
+    .maincontainer .header .search{
+        width: 90%;
+        order: 4;
+        margin: auto;
+        margin-top: -28vh;
+    }
+    .maincontainer .content{
+        margin-top: -20vh;
+    }
+    .maincontainer .header ul{
+background-color: rgba(240, 248, 255, 0.469);
+flex-direction: column;
+margin-top:0;
+gap: 10px;
+align-items: flex-start;
+padding:2vh 4% ;
+border-radius: 20px 0 0 20px;
+box-shadow: 4px 4px 4px #e75e8eee;
+transition: 1s;
+transform: rotatey(90deg);
+transform-origin: right;
+    }
+    .maincontainer .header ul li {
+        font-size: 20px;
+        border-bottom: 1px solid #4548484d;
+        width: 80%;
+    }
+    .maincontainer .header ul li a{
+        color: aliceblue;
+    }
+     .maincontainer .header label i{
+        display: block;
+        color: var(--PinkColor);
+        font-size: 35px;
+     }
+     .maincontainer .header .logo{
+        width: 30%;
+     }
+     .maincontainer .header input[type="checkbox"]:checked+ul{
+        transform: rotatey(0);
+     }
+    .maincontainer .content .banner h2{
+        font-size: 30px;
+        width: 60%;
+    }
+    .maincontainer .content .banner h3{
+        font-size: 30px;
+    }
+    .maincontainer .content .banner button{
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+    .maincontainer .content .popular .cards .card{
+        width: 45%;
+    }
+    .maincontainer .content .library .gaming .game{
+        grid-template-columns: repeat(2,1fr);
+         
+  }
+}
+@media(max-width:640px) {
+    .maincontainer .content .popular .cards .card{
+        width: 80%;
+        margin: auto;
+    }
+    .maincontainer .content .banner h2{
+        font-size: 20px;
+    }
+    .maincontainer .content .library .gaming .game{
+        grid-template-columns: repeat(1,1fr);
+        
+         
+  }
+  .maincontainer .content .library .gaming .game img{
+    width: 40%;
+    margin: auto;
+  }
+  .maincontainer .content .library h2,
+  .maincontainer .content .popular h2{
+    font-size: 25px;
+  }
+  
+    
+}
+ 
+
+ 
+
+
+
